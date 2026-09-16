@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>انتقال به کانال حراج اصفهان</title>
+    <style>
+        body {
+            font-family: Tahoma, Segoe UI, sans-serif;
+            background-color: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            max-width: 90%;
+            width: 350px;
+        }
+        h2 { color: #333; font-size: 18px; margin-bottom: 10px; }
+        p { color: #666; font-size: 14px; margin-bottom: 25px; line-height: 1.6; }
+        .btn {
+            display: block;
+            background-color: #e67e22;
+            color: white;
+            text-decoration: none;
+            padding: 14px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        .btn:hover { background-color: #d35400; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>در حال انتقال به ایتا...</h2>
+    <p>اگر اپلیکیشن ایتا به‌صورت خودکار باز نشد، روی دکمه زیر کلیک کنید:</p>
+    <a href="eitaa://join?space=haraj_esfahan" class="btn">ورود به کانال حراج اصفهان</a>
+</div>
+
+<script>
+    // تلاش برای باز کردن خودکار اپلیکیشن ایتا به محض ورود کاربر به صفحه
+    window.onload = function() {
+        window.location.href = "eitaa://join?space=haraj_esfahan";
+    };
+</script>
+
+</body>
+</html>
